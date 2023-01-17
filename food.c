@@ -10,10 +10,11 @@ int main() {
 	int i;
 
 	printf("\n");
-
+	
 	for (i = 0; i < 5; i++) {
 
 		printf("%s - ", produkt[i]);
+		printf("%.2f € - ", preis[i]);
 		printf("%d g - ", packung[i]);
 		printf("%.2f €/Kilo netto - ", preis[i] / packung[i] * 1000 / 1.07);
 		printf("%.2f €/Kilo brutto", preis[i] / packung[i] * 1000);
